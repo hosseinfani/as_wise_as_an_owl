@@ -1,0 +1,137 @@
+\documentclass[sigconf]{acmart}
+% Cleaning
+\pagestyle{fancy} % removes running headers
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain} % removes running headers
+\fancyhead{}
+\settopmatter{printacmref=false, printfolios=false}
+% Copyright
+\setcopyright{none}
+% \setcopyright{acmcopyright}
+% \setcopyright{acmlicensed}
+% \setcopyright{rightsretained}
+% \setcopyright{usgov}
+% \setcopyright{usgovmixed}
+% \setcopyright{cagov}
+% \setcopyright{cagovmixed}
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\acmDOI{}
+
+\usepackage{listings}
+\definecolor{codegray}{rgb}{0.97,0.97,0.97}
+
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+%\linespread{0.95}
+\usepackage{mdwlist}
+\usepackage{amsmath}
+
+
+\begin{document}
+\title{Clear and Concise Title Like a Headline }
+\author{Kousar Malekinasab}
+\affiliation{
+  \institution{University of Victoria}
+%   \streetaddress{P.O. Box 1212}
+%   \city{Toronto}
+%   \state{ON}
+%   \country{Canada}
+%   \postcode{43017-6221}
+}
+\email{kovvy@uvic.ca }
+\author{Hossein Fani}
+% \authornotemark[1]
+\orcid{0000-0002-6033-6564}
+\affiliation{
+ \institution{University of Victoria}
+%   \city{Fredericton}
+%   \state{NB}
+%   \country{Canada}
+}\email{hfani@uvic.ca}
+
+\begin{abstract}
+{\color{blue}This is a \textit{sample} one-page proposal for the Algorithms and Data Models course. The sections and subsections are \textit{by no means} fixed and should indeed be changed or customized according to the proposal. For instance, your proposal should have an abstract that briefly explains the whole proposal in just one short paragraph. The reader should become interested in reading your manuscript in less than 10-20 seconds. The codebase, along with the installation and execution instructions as well as software artifacts, can be obtained under cc-by-nc-sa-4.0 license at https://github.com/**.}
+\end{abstract}
+
+\keywords{More Specific Keywords, Specific Keyword, General Keyword}
+\maketitle
+
+\section{Introduction}
+{\color{blue}This is an important section that all manuscripts should have. This section is an opening to your proposal. The reader, who has already become interested in spending more time reading your proposal, wants to know more, although she may not have deep knowledge about the scope of your work. For the purpose of this proposal, you can assume that the reader is an undergraduate from a computer-related field. Therefore, you have to gradually explain your proposal from a very general perspective and narrow it down to the main goal of your proposal. Please avoid exotic openings. An example:}
+
+Environmental health and safety is the utmost priority of any municipal governor. To enhance the continual security of a community, near real-time software systems are developed to monitor the area, record the events and send alarm notifications\cite{}. For an ounce of prevention is worth a pound of cure, lots of efforts have been put into finding security incidents’ root cause, prediction, and prevention by mining huge datasets of records~\cite. Unfortunately, these records do not comply with a widely accepted standard in representation, which impedes automatic knowledge extraction and reasoning. Local and official security guards or crime-detection CCTV cameras express the same event with different schemes. In such a situation, we desperately need an ontology which, to our knowledge, thus far, we do not have any. In this proposal, we devise a novel light-weight domain ontology, Security Incident Ontology (SIO), which is able to describe any kind of security risk from indecent behaviour to assault to more adverse crime.
+
+\section{Motivation}
+{\color{blue}This is an important part of a proposal, whether in a separate section or inside the introduction section. You have to motivate the reader that this proposal is worth spending time, effort and money. The proposal is worthy for you; otherwise, you would not put effort into doing it. However, you have to put forward arguments and reasons for the reader. The reader, who has come with you so far and is interested in your proposal, wants to see how you improve \textit{society}, {human civilization}, {lifestyle}, and make {more money}. Simply put, why do you want to do this proposal when others have already solved it? Furthermore, in the proposal, we do not show the solution but the \textit{need} for a solution. Let's continue.}
+
+University of Victoria believes an informed community is a safer one. Their Integrated Risk Management (IRM) system notifies all staff, students, faculty and alumni (who have graduated within the past five years) by security incident alarms which are delivered directly via email. Its urban campus is located at the most *** center of the city~\cite{}, such system seems indispensable to continually enhance the safety and security of the community. Each notification includes temporal facts of the incident, location, victim and suspect details, and a brief account of whole event. Likewise, Victoria Police Service provides several mailing lists for which citizens of different divisions can sign up to be kept up to date on current happenings across the city, and in their community~\cite{}. However, the lack of a standard way for reporting parties to represent security happenings and a verification mechanism impedes automatic, yet reliable crime analysis and knowledge discovery for long-term planning. As a result, IRM has a disclaimer on its crime statistics webpage~\cite{} and states firmly that they make no warranty to the content, accuracy, timeliness or completeness of the statistics.
+
+In order to provide a reliable, yet explicit understanding of incidents reported from a wide variety of detectors, we took an ontological approach. The ontology-based description approach is not novel. There are several initiatives to model event-focused concepts in knowledge representation [16], medical informatics [17] [18], sports [19], business news [20], scholarly events [21], life events [22] and multimedia community [23] [24]. Crime Emergency Event Model (CE2M) [25], despite what its name implies, is an ontology for emergency events rather than crimes. [26] constructs an event ontology to describe cyber-crimes on the level of event for crimes in Web such as online fraud, internet pornography, illegal trade, false advertising, violations of privacy, etc, and it is still not a general crime domain ontology. [27] describes a knowledge base of Politically Motivated Violent Events (PMVE) consisting of a domain ontology and of instance data. Although the work explain almost nothing about its ontology and focus more on extracting violent crimes from online news reports, it provides us, along with the aforementioned ontology models, an insight into how to model our generic security event structure. We reuse a most cited event ontology, Event [9], instead of recreating a new one and specifically adopt it to Security Incident Ontology, SIO, a novel explicit specification of security incident conceptualization.
+
+\subsection{Motivating Example}
+{\color{blue}\textit{Simple} and \textit{consistent} example is key for helping a reader with general knowledge to understand your proposal. Throughout your manuscript, you should reuse the same example for different parts of your proposal. As you can see in this manuscript, we already used two examples in the introduction section. The motivation example is a continuation of the same example, but to showcase the importance of your proposal. Again, it could be a separate section or subsection or it could be inside them. Also, it could be an image or figure. Then, you have to fully explain the image/figure in text as well. }
+
+\begin{lstlisting}[frame=lines, language=bash,basicstyle=\ttfamily\scriptsize,backgroundcolor=\color{codegray},showstringspaces=false,escapeinside={(*@}{@*)},columns=fullflexible,
+  keepspaces=true]
+Incident Details:
+
+On Wednesday 12 November, 2014, at approximately 9:55 PM,
+University Security & Emergency Services were made aware
+of the following incident:
+
+On Friday 7 November, 2014, at approximately 12:30 AM,
+the victim, a community member, was approached by the
+subject on the 1st floor Atrium area of the Architecture
+(ARC) building, near to the west entrance.
+
+The victim felt the subject grasp her poncho from behind,
+which she was wearing at the time.  The victim then turned
+around to discover that the subject had bitten and had her
+poncho in his mouth.  The subject then released the victim’s
+poncho, left the area though the west entrance, and was last
+seen walking southbound on the east sidewalk of Church Street
+
+University Security & Emergency Services conducted safety
+planning with the victim, who reported no physical injuries,
+declined medical care, and did not want Toronto Police Services
+involved.
+
+If you have any information about this incident or have been
+the victim of a similar incident, please call University
+Security & Emergency Services at ** or via email at *@*.ca.
+For any incidents in progress use the Emergency "80" number
+from internal phones.  University Security & Emergency Services
+offers 24 hour Walk Safe escorts and free self-defense courses;
+please check our website for more information at
+http://www.*.ca/irm/security/index.html.
+
+Suspect information:
+
+The Subject is described as:
+Male
+Light complexion
+Medium-length, dark blond hair
+Approximately 20-25 years of age
+Wearing a navy blue Ryerson hooded sweatshirt/coat with gold embroidery
+
+Notification Information:
+
+If you are a witness to a crime,
+please call Security at *, or  Police Services through
+Crime Stoppers at *.
+
+\end{lstlisting}
+
+
+\section{Team Justification}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography.bib}
+
+\end{document}
