@@ -1,4 +1,4 @@
-# As Wise As an Owl
+# As Wise As an Owl <img alt="" src="logo.png" width=40 hight=40>
 Materials for the Computer Science course: Algorithms and Data Models
 
 From Relational (RDBMS) toward Semantic Web (GGG)
